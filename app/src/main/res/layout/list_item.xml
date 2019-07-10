@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:id="@+id/imageview_button"
+        android:background="#FFF7DA"
+        android:src="@drawable/ic_android_black_24dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout_list_item"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textview_miwok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                tools:text="lutti"
+                android:paddingBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/textview_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:text="one"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center|right">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play_arrow_black_24dp"
+                android:background="@null"
+                android:id="@+id/play_imagebutton"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pause_imagebutton"
+                android:src="@drawable/ic_pause_black_24dp"
+                android:background="@null"
+                android:layout_toRightOf="@+id/play_imagebutton"
+                android:layout_gravity="center|right"
+                />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
